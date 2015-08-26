@@ -1,0 +1,10 @@
+---
+timeout: 180
+instances: 1
+memory: 512M
+applications:
+- name: company
+  buildpack: go_buildpack
+  command: company
+  path: services/company 
+  # services: [ hystrix ] 
